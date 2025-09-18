@@ -20,7 +20,11 @@ fun main() {
 //    createQuest("Спасти принцессу",100, true)
 
 //Задание 6
-    print(calculateXP(5))
+//    print(calculateXP(5))
+
+//Задание 7
+//    println(checkInventory("Меч"))
+//    println(checkInventory("Зелье"))
 }
 //Задание 1
 fun showGameLogo() {
@@ -41,4 +45,10 @@ fun createQuest(title: String, reward: Int = 50, isMain: Boolean = false) {
 //Задание 6
 fun  calculateXP(level: Int): Int {
     return 1000 * level
+}
+//Задание 7
+fun checkInventory(item: String): Boolean {
+    val items = arrayOf("Меч", "Посох", "Лук")
+    if (item in items) {return true}
+    else {return  false}
 }
