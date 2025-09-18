@@ -56,4 +56,9 @@ fun checkInventory(item: String): Boolean {
 fun castSpell() { println("Каст случайного заклинания!")}
 fun castSpell(spell: String) { println("Каст заклинания $spell!") }
 fun castSpell(spell: String, power: Int) {println( "Каст $spell с силой $power!")}
-
+//Задание 9
+fun createWeapon( name: String) {println("Оружие: $name")}
+fun createWeapon(name: String, damage: Int) {println("Оружие: $name (Урон:$damage)")}
+fun createWeapon(damage: Int, isMagic: Boolean ) {
+    println("${if (isMagic) "Магическое" else "Обычное"} оружие (Урон: $damage)")
+}
