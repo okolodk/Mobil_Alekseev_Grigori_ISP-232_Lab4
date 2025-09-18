@@ -18,6 +18,9 @@ fun main() {
     //Задание 5
 //    createQuest("Найти кота")
 //    createQuest("Спасти принцессу",100, true)
+
+//Задание 6
+    print(calculateXP(5))
 }
 //Задание 1
 fun showGameLogo() {
@@ -34,4 +37,8 @@ fun spawnEnemy(name: String, health: Int = 100, isBoss: Boolean = false) {
 //Задание 5
 fun createQuest(title: String, reward: Int = 50, isMain: Boolean = false) {
     println("Квест: ${title} (Награда: ${reward} золота)${if (isMain) " | ОСНОВНОЙ" else ""}")
+}
+//Задание 6
+fun  calculateXP(level: Int): Int {
+    return 1000 * level
 }
