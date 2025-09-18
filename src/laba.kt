@@ -62,3 +62,9 @@ fun createWeapon(name: String, damage: Int) {println("Оружие: $name (Ур�
 fun createWeapon(damage: Int, isMagic: Boolean ) {
     println("${if (isMagic) "Магическое" else "Обычное"} оружие (Урон: $damage)")
 }
+//Задание 10
+fun heal() {println("лечит 10 HP")}
+fun heal(amount: Int) {println("лечит $amount")}
+fun heal( amount: Int, isPotion: Boolean) {
+    println(if (isPotion) "Выпито зелье (+$amount HP)" else "Заклинание лечения (+$amount HP)")
+}
