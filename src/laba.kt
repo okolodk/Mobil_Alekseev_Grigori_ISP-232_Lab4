@@ -14,6 +14,10 @@ fun main() {
     //Задание 4
 //    spawnEnemy("Гоблин", 300)
 //    spawnEnemy("Король Тьмы", 500, true)
+
+    //Задание 5
+//    createQuest("Найти кота")
+//    createQuest("Спасти принцессу",100, true)
 }
 //Задание 1
 fun showGameLogo() {
@@ -23,8 +27,11 @@ fun showGameLogo() {
 fun showEnemy(name: String, level: Int) {
     println("Враг: ${name} (Уровень: ${level})")
 }
-//Задание 3
-fun spawnEnemy(name: String, health: Int = 100, isBoss:
-Boolean = false) {
+//Задание 3, 4
+fun spawnEnemy(name: String, health: Int = 100, isBoss: Boolean = false) {
     println("Враг: $name (Здоровье: $health HP) ${if (isBoss)  "БОСС!" else ""}")
+}
+//Задание 5
+fun createQuest(title: String, reward: Int = 50, isMain: Boolean = false) {
+    println("Квест: ${title} (Награда: ${reward} золота)${if (isMain) " | ОСНОВНОЙ" else ""}")
 }
