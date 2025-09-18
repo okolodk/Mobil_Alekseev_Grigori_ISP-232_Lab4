@@ -9,8 +9,11 @@ fun main() {
 
     //Задание 3
 //    spawnEnemy("гоблин")
-//    spawnEnemy("Вождь гоблинов", 200,true)
+//    spawnEnemy("Вождь гоблинов", isBoss = true)
 
+    //Задание 4
+//    spawnEnemy("Гоблин", 300)
+//    spawnEnemy("Король Тьмы", 500, true)
 }
 //Задание 1
 fun showGameLogo() {
