@@ -52,3 +52,8 @@ fun checkInventory(item: String): Boolean {
     if (item in items) {return true}
     else {return  false}
 }
+//Задание 8
+fun castSpell() { println("Каст случайного заклинания!")}
+fun castSpell(spell: String) { println("Каст заклинания $spell!") }
+fun castSpell(spell: String, power: Int) {println( "Каст $spell с силой $power!")}
+
